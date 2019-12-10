@@ -1,0 +1,523 @@
+fileFormatVersion: 2
+guid: 87efaf20c96bd46b2a6e7bf4d4d3fd57
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 21300000
+    second: Head
+  - first:
+      213: 21300002
+    second: Shoulder
+  - first:
+      213: 21300004
+    second: Neck
+  - first:
+      213: 21300006
+    second: Upper Arm
+  - first:
+      213: 21300008
+    second: Body
+  - first:
+      213: 21300010
+    second: Elbow
+  - first:
+      213: 21300012
+    second: Arm
+  - first:
+      213: 21300014
+    second: Upper Leg
+  - first:
+      213: 21300016
+    second: Hand
+  - first:
+      213: 21300018
+    second: Knee
+  - first:
+      213: 21300020
+    second: Hips Joint
+  - first:
+      213: 21300022
+    second: Knee Joint
+  - first:
+      213: 21300024
+    second: Leg
+  - first:
+      213: 21300026
+    second: Ankle
+  - first:
+      213: 21300028
+    second: Foot
+  - first:
+      213: 21300030
+    second: Head White
+  - first:
+      213: 3849534665368990950
+    second: A2D Robot_0
+  - first:
+      213: -5018466879407340769
+    second: A2D Robot_1
+  - first:
+      213: 6104196390324345443
+    second: A2D Robot_2
+  - first:
+      213: 8467680948013592100
+    second: A2D Robot_3
+  - first:
+      213: 6938901153940929350
+    second: A2D Robot_4
+  - first:
+      213: 6256882235839501861
+    second: A2D Robot_5
+  - first:
+      213: -4687485358782253219
+    second: A2D Robot_6
+  - first:
+      213: 3731201017138078987
+    second: A2D Robot_7
+  - first:
+      213: 8342386984461581332
+    second: A2D Robot_8
+  - first:
+      213: 1044665041408031054
+    second: A2D Robot_9
+  - first:
+      213: -5593299220557435106
+    second: A2D Robot_10
+  - first:
+      213: 4302354181191058578
+    second: A2D Robot_11
+  - first:
+      213: -3149581857278474355
+    second: A2D Robot_12
+  - first:
+      213: -1263207654738097174
+    second: A2D Robot_13
+  - first:
+      213: 508953348411970946
+    second: A2D Robot_14
+  - first:
+      213: 6443208029954143643
+    second: A2D Robot_15
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: 16
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: A2D Robot_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 696
+        width: 305
+        height: 318
+      alignment: 9
+      pivot: {x: 0.49836066, y: 0.49999997}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e41c056137a6acc4f8f6176ad65dc4d0
+      internalID: 3849534665368990950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 712
+        width: 64
+        height: 63
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0624c7482174f794cb32b3161196c14f
+      internalID: -5018466879407340769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_2
+      rect:
+        serializedVersion: 2
+        x: 439
+        y: 706
+        width: 292
+        height: 304
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af8f9fc8d6eb6241b0e11e319070b04
+      internalID: 6104196390324345443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_3
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 588
+        width: 191
+        height: 116
+      alignment: 9
+      pivot: {x: 0.4973822, y: 0.50431037}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19b0d01e2fe64ac42a4dc12bc34e4866
+      internalID: 8467680948013592100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_4
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 598
+        width: 59
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e65e2aeb908d6d46bcdc8dee5ee1bcc
+      internalID: 6938901153940929350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_5
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 402
+        width: 239
+        height: 194
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5025773}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe32f0e95ca48ec4289b63c21dcea9a5
+      internalID: 6256882235839501861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_6
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 546
+        width: 45
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1677cd678105afd4087d52b3562a972f
+      internalID: -4687485358782253219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_7
+      rect:
+        serializedVersion: 2
+        x: 297.05115
+        y: 441.11075
+        width: 73
+        height: 108.99997
+      alignment: 9
+      pivot: {x: 0.49245003, y: 0.49439692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1640f8ff9250d4fb7f95c1a44a291a
+      internalID: 3731201017138078987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_8
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 250
+        width: 90
+        height: 126
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4a94499fe7dbfd499dd99734b5d424c
+      internalID: 8342386984461581332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_9
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 369
+        width: 74
+        height: 74
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 914cef7244ddf0745b3ea4203bada7fe
+      internalID: 1044665041408031054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_10
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 280
+        width: 76
+        height: 75
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1e7581463578bf469c5ca1a7e5cce14
+      internalID: -5593299220557435106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_11
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 286
+        width: 99
+        height: 66
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bab3716c59e61a14cb90ddaccb9135a4
+      internalID: 4302354181191058578
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_12
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 244
+        width: 59
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9459771d3099f564fa04d58934f8b02f
+      internalID: -3149581857278474355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_13
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 138
+        width: 77
+        height: 99
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfd42be71bc2694d864ca4481ec0ef4
+      internalID: -1263207654738097174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_14
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 91
+        width: 48
+        height: 49
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10efcbb39e30a6e4f83f1a6b94564c1c
+      internalID: 508953348411970946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: A2D Robot_15
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 13
+        width: 99
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb6f2dd66836d648a7ab7471db70d83
+      internalID: 6443208029954143643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 6edadaf54bfb3e64584da37c5c7e7f65
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 637056907967754376
+  assetBundleName: 
+  assetBundleVariant: 
