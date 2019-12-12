@@ -10,11 +10,11 @@ public class Skill : MonoBehaviour
 
     public Sprite Icon;
 
-    public SkillLogic Logic;
+    private SkillLogic Logic;
     // Start is called before the first frame update
     void Start()
     {
-        
+        this.Logic = gameObject.GetComponent<SkillLogic>();
     }
 
     // Update is called once per frame
@@ -24,6 +24,7 @@ public class Skill : MonoBehaviour
     }
 
     public void Cast(Character character, Character target){
+        this.Logic = GetComponent<SkillLogic>();
         this.Logic.Cast(character,target,this);
     }
 

@@ -57,6 +57,8 @@ public class BattleManager : MonoBehaviour
     }
     public void PlayerAttack(Skill skill)
     {
+        var list = new List<Component>();
+        skill.gameObject.GetComponents(list);
         if (PlayerTurn && TurnIsOver)
         {
             TurnIsOver = false;
@@ -68,7 +70,7 @@ public class BattleManager : MonoBehaviour
         if (TurnIsOver)
         {
             TurnIsOver = false;
-            _enemyStat.Skills[0].Cast(_enemyStat, _playerController);
+            _enemyStat.Skills[0].GetComponent<Skill>().Cast(_enemyStat, _playerController);
         }
     }
 }

@@ -10,17 +10,7 @@ public class MeleeAttack : SkillLogic
     Character _character;
     Character _target;
     Skill _skillInfo;
-    // Start is called before the first frame update
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
+    
     public override void Cast(Character character, Character target, Skill skillInfo)
     {
         this._character = character;
@@ -32,18 +22,18 @@ public class MeleeAttack : SkillLogic
 
         // Управление анимацией атакующго и цели
     }
-    private void Attack()
-    {
-        // Запускаем анимацию атаки
-        // нанесение урона
+    // private void Attack()
+    // {
+    //     // Запускаем анимацию атаки
+    //     // нанесение урона
 
-    }
+    // }
 
     IEnumerator Move()
     {
         // Логика рукопашной атаки
         // Подписываемся на ивент окнчания движения
-        this._character.Movement.MovementIsOver += this.Attack;
+        //this._character.Movement.MovementIsOver += this.Attack;
         // Двигаем персонажа
         var dir = this._target.gameObject.transform.position.x > 0 ? 1.5f : -1.5f;
         this._character.Movement.Move(new Vector2(this._target.gameObject.transform.position.x - dir

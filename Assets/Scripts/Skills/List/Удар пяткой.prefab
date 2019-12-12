@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3462388225577982727}
   - component: {fileID: 3462388225577982726}
+  - component: {fileID: 6406929330998882459}
   m_Layer: 0
   m_Name: "\u0423\u0434\u0430\u0440 \u043F\u044F\u0442\u043A\u043E\u0439"
   m_TagString: Untagged
@@ -47,4 +48,15 @@ MonoBehaviour:
   Name: "\u0423\u0434\u0430\u0440 \u043F\u044F\u0442\u043A\u043E\u0439"
   Value: 10
   Icon: {fileID: 21300000, guid: f47fa1a8e8c158a42b11fd455234581d, type: 3}
-  Logic: {fileID: 393439431643337491, guid: 6ac82e4635e3c524389a123e9050f614, type: 3}
+--- !u!114 &6406929330998882459
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3462388225577982725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebc4688f879cf30448426916ea310e04, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

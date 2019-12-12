@@ -12,7 +12,7 @@ public class Character : MonoBehaviour
 
     public double BaseAttack;
 
-    public List<Skill> Skills;
+    public List<GameObject> Skills;
 
     public CharacterMovement Movement;
 

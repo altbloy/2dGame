@@ -92,6 +92,7 @@
      <Compile Include="Assets\Scripts\Skills\ISkillLogic.cs" />
      <Compile Include="Assets\Scripts\Skills\Skill.cs" />
      <Compile Include="Assets\Scripts\Skills\SkillsLogic\Melee\MeleeAttack.cs" />
+     <Compile Include="Assets\Scripts\Skills\SkillsLogic\Range\RangeAttack.cs" />
      <Compile Include="Assets\Scripts\Ui\SkillPanal\SkillIcon.cs" />
      <Compile Include="Assets\SkillPanel.cs" />
      <None Include="Assets\Free Asset - 2D Handcrafted Art\Shader\NormalMappedTileAnimated.shader" />

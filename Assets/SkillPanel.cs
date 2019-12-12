@@ -15,7 +15,7 @@ public class SkillPanel : MonoBehaviour
 
         foreach (var skill in player.Skills)
         {
-            this.UpdatePanel(skill);
+            this.UpdatePanel(skill.GetComponent<Skill>());
         }
     }
 
@@ -25,8 +25,10 @@ public class SkillPanel : MonoBehaviour
         var skillObjRect = (RectTransform)skillObj.GetComponent(typeof(RectTransform));
         var button = (UnityEngine.UI.Button)skillObj.GetComponent(typeof(UnityEngine.UI.Button));
         button.onClick.AddListener(() => SkillCallBack(skill));
-        skillObj.AddComponent(typeof(Skill));
+        ///skillObj.AddComponent(typeof(Skill));
         skillObj.name = skill.Name;
+        var obj = (GameObject)Instantiate(skill.gameObject);
+        obj.transform.SetParent(skillObj.transform);
 
         button.GetComponent<Image>().sprite = skill.Icon;
         skillObj.transform.SetParent(gameObject.transform);
