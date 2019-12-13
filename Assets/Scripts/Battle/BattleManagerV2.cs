@@ -5,7 +5,9 @@ using System.Linq;
 
 public class BattleManagerV2 : MonoBehaviour
 {
-    public float speed = 0.1f;
+     public AnimationCurve curve;
+     public (AnimationCurve cur , int cc) fff ;
+    public float speed = 2f;
     // Start is called before the first frame update
     public BattleState currentState;
 
@@ -55,10 +57,15 @@ public class BattleManagerV2 : MonoBehaviour
             obj.transform.localPosition =  new Vector3(step*2, 0, 0);
             this.BattleGrounds.Add(objStat);
         }
-        CubeForMove playerCubeStart = this.BattleGrounds.FirstOrDefault(x=>x.Position == 4);
-        Player.transform.position = new Vector2(playerCubeStart.transform.position.x,Player.transform.position.y);
+        CubeForMove playerCubeStart = this.BattleGrounds.FirstOrDefault(x=>x.Position == 0);
+        Player.transform.position = playerCubeStart.transform.position;//new Vector2(playerCubeStart.transform.position.x,Player.transform.position.y);
         playerCubeStart.IsUsed = true;
         playerCubeStart.Player = Player.GetComponent<Character>();
+
+        CubeForMove player2CubeStart = this.BattleGrounds.FirstOrDefault(x=>x.Position == 10);
+        Enemy.transform.position = player2CubeStart.transform.position;//new Vector2(player2CubeStart.transform.position.x,Enemy.transform.position.y);
+        player2CubeStart.IsUsed = true;
+        player2CubeStart.Player = Enemy.GetComponent<Character>();
     }
 
     // Update is called once per frame
@@ -74,15 +81,17 @@ public class BattleManagerV2 : MonoBehaviour
                     if(!current.IsFirst){
                         CubeForMove next = this.BattleGrounds
                         .FirstOrDefault(x=>x.Position == current.Position -1);
-                        // Обнулить значение кубов и задать новые
+                        
+                        if(next!=null && !next.IsUsed){
+                            // Обнулить значение кубов и задать новые
                         current.IsUsed=false;
                         current.Player = null;
 
                         next.IsUsed = true;
                         next.Player = Player.GetComponent<Character>();
                         // передвинуть на один куб вперед если это возможно
-                        //Player.transform.position = new Vector2(next.transform.position.x,Player.transform.position.y); //next.transform.position;//Vector3.Lerp(Player.transform.position, next.transform.position, Time.deltaTime);
                         StartCoroutine(this.Move(Player, next.gameObject));
+                        }
                     }
                 }
                 if(Input.GetKey(KeyCode.D)){
@@ -91,6 +100,8 @@ public class BattleManagerV2 : MonoBehaviour
                     if(!current.ISLast){
                         CubeForMove next = this.BattleGrounds
                         .FirstOrDefault(x=>x.Position == current.Position + 1);
+
+                        if(next!=null && !next.IsUsed){
                         // Обнулить значение кубов и задать новые
                         current.IsUsed=false;
                         current.Player = null;
@@ -99,6 +110,7 @@ public class BattleManagerV2 : MonoBehaviour
                         next.Player = Player.GetComponent<Character>();
                         // передвинуть на один куб вперед если это возможно
                         StartCoroutine(this.Move(Player, next.gameObject));
+                        }
                     }
                 }
             break;
@@ -118,31 +130,21 @@ public class BattleManagerV2 : MonoBehaviour
         targerPos.y = obj.transform.position.y;
 
         this.IsMove = true;
-        float speed = this.speed;// animation.length /100; // 0.01f; //  скорость прогресса (от начальной до конечной позиции)
-        float progress = 0.1f;
-        //yield return new WaitForSeconds(animation.length/2);
-        int i = 0;
+        float speed = 0f;// animation.length /100; // 0.01f; //  скорость прогресса (от начальной до конечной позиции)
         while (true)
         {
-            i++;
-            
             float dist = Vector2.Distance(targerPos ,(Vector2)obj.transform.position);
-            Debug.Log(dist);
              if(dist==0 || dist <= 0.01f){
                  this.IsMove=false;
+                 obj.transform.position = targerPos;
                 yield break;
              }
-            // Vector3 dir = (targerPos - (Vector2)obj.transform.position ) * Time.deltaTime*2;
-            // obj.transform.Translate(dir);
-            obj.transform.position = Vector2.MoveTowards(obj.transform.position,targerPos,Time.deltaTime * speed);
-            // yield return null;
-            // progress += speed;
-            // obj.transform.position = Vector3.Lerp(obj.transform.position, targerPos, progress);
-            // if (progress >= 1 || progress>= 0.95f) {
-            //     this.IsMove= false;
-            //    // characterAnimator.SetBool("Walk",false);
-            //     yield break;
-            // } 
+            if(speed<= animation.length)
+                speed += Time.deltaTime; 
+
+            Debug.Log( "length "+animation.length+" -  " +this.curve.Evaluate(animation.length - Time.deltaTime) + "time" + speed);
+            obj.transform.position = Vector2.MoveTowards(obj.transform.position,targerPos,this.curve.Evaluate(speed));
+           
             // выход из корутины, если находимся в конечной позиции
             yield return null; // если выхода из корутины не произошло, то продолжаем выполнять цикл while в следующем кадре
 
